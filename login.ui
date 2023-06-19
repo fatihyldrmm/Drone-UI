@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1450</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1450</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1450</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+	border-style:none;
+	color: rgb(211, 211, 211);
+}
+#mainF{
+	background-image: url(:/images/images/login1.jpg);
+}
+#profilLbl,#passLbl{
+	background-color: rgba(244,0,0,255);
+	border-radius:1px;
+}
+#profilLE,#passLE{
+	background-color: Transparent;
+}
+#girisBtn{
+	border-radius:8px;
+	background-color: rgba(244,0,0,255);
+	color: rgb(0, 0, 0);
+}
+#girisBtn:hover{
+	color: rgb(0, 0, 0);
+	background-color: rgb(180, 20, 20);
+}
+#closeBtn{
+	color: rgb(214, 214, 214);
+	background-color: rgb(150, 11, 11);
+	border-bottom-left-radius:11px;
+}
+#closeBtn:hover{
+	color: rgb(200, 200, 200);
+	background-color: rgb(140, 20, 20);
+}
+
+</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="mainF">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <widget class="QLineEdit" name="profilLE">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>362</y>
+         <width>411</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Kullanıcı adı</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="passLE">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>443</y>
+         <width>411</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Şifre</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="girisBtn">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>520</y>
+         <width>351</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>GİRİŞ</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="closeBtn">
+       <property name="geometry">
+        <rect>
+         <x>1410</x>
+         <y>0</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="userIconLbl">
+       <property name="geometry">
+        <rect>
+         <x>553</x>
+         <y>363</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resoruces.qrc">:/icons/pngIcons/icons8_account_30px.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="passIconLbl">
+       <property name="geometry">
+        <rect>
+         <x>555</x>
+         <y>447</y>
+         <width>27</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resoruces.qrc">:/icons/pngIcons/icons8_lock_30px.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resoruces.qrc"/>
+ </resources>
+ <connections/>
+</ui>
